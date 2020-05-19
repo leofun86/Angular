@@ -1,0 +1,13 @@
+<div class="container">
+    <h1 class="bg-dark text-white text-center my-4 py-4">[ngClass]</h1>
+
+    <button class="btn btn-dark mb-3 mr-3" (click)="activo='primero'">Primero</button>
+    <button class="btn btn-danger mb-3" (click)="activo='segundo'">Segundo</button>
+
+    <p class="text-info d-none" [ngClass]="{'d-block':activo=='primero'}">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ea, assumenda enim ullam natus aliquid sequi dolorum voluptates perspiciatis dolore nulla. Eius quidem numquam enim perspiciatis, vel ea iusto deleniti.
+    </p>
+    <p class="text-danger d-none" [ngClass]="{'d-block':activo=='segundo'}">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum ipsa ab, inventore sunt veritatis ullam repellat dicta perferendis magnam assumenda dignissimos reiciendis! Ex explicabo suscipit dolorum quaerat praesentium minus itaque.
+    </p>
+</div>

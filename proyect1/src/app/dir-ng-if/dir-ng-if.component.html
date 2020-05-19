@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 class="bg-dark text-white text-center my-4 py-4">El valor de la variable es: {{show}}</h1>
+    <button class="btn btn-success mr-3" (click)="show=!show">Action</button>
+    <p class="text-info" *ngIf="show; else show2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur temporibus nisi laudantium at natus pariatur aliquid iure molestias incidunt. Ea ad et sapiente adipisci! Fugiat, doloribus voluptatum! Non, quos id?
+    </p>
+    <ng-template #show2>
+        <p class="text-danger">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, soluta voluptatem? Adipisci accusantium officiis eaque optio consequatur ullam, rerum enim labore repellat repudiandae nulla exercitationem ad porro ratione illo laboriosam?
+        </p>
+    </ng-template>
+</div>

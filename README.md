@@ -16,3 +16,7 @@ Comandos
 * **Crear un componente =>** ng g c nombreComponente
 * **Probar el proyecto en un navegador =>** npm start
 
+Agregar un componente al proyecto
+---------------------------------
+Dentro de la carpeta **app** se encuentra el archivo **app.componente.html** que es el que contendrá todos los componentes de nuestra app. Para poder agegar un componente hay que abrir dicho archivo y escribir el nombre del componente como si fuera una etiqueta HTML.
+* < componente >< / componente >
