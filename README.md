@@ -1,19 +1,18 @@
 # Apendiendo Angular
-====================
 
 Instalar Node.JS
 -----------------
-_Necesitarás tener instalado la última (o más estable) versión de Node.JS. Si ya lo tienes instalado, omite este paso._
-_[Descargar Node.JS](https://nodejs.org)_
+Necesitarás tener instalado la última (o más estable) versión de Node.JS. Si ya lo tienes instalado, omite este paso.
+* [Descargar Node.JS](https://nodejs.org)
 
 Instalar Angular
 ----------------
-_Desde la consola de Windows => npm install -g @angular/cli_
-_Para corroborar que Angular haya sido correctamente instalado => ng --version_
+* Desde la consola de Windows => **npm install -g @angular/cli**
+* Para corroborar que Angular haya sido correctamente instalado => ng --version
 
 Comandos
 --------
-_Crear un proyecto => ng new nombreProyecto_
-_Crear un componente => ng g c nombreComponente_
-_Probar el proyecto en un navegador => npm start_
+* **Crear un proyecto =>** ng new nombreProyecto
+* **Crear un componente =>** ng g c nombreComponente
+* **Probar el proyecto en un navegador =>** npm start
 
