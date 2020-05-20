@@ -1,7 +1,0 @@
--------------
--- ANGULAR --
--------------
-instalar angular => npm install -g @angular/cli
-crear proyecto => ng new nombreProyecto
-probar proyecto =>npm start
-crear componente => ng g c nombreComponente
