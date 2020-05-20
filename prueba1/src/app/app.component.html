@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 class="bg-primary text-center text-white py-4 mb-0">Prueba 1</h1>
+    <h5 class="bg-dark text-center text-white py-2 mt-0">Leandro Funes</h5>
+    <div class="text-center mt-5 mb-3">
+        <button class="btn btn-warning btn-lg mr-4" (click)="result=result-1">- 1</button>
+        <p class="btn btn-info btn-lg mr-4 px-5" >{{result}}</p>
+        <button class="btn btn-success btn-lg" (click)="result=result+1">+ 1</button>
+    </div>
+    <button class="col-12 bg-dark text-center text-white py-4" style="font-size:20px;" ><span *ngIf="result > 15">Hola Mundo</span><span *ngIf="result <= -10">Adiós</span></button>
+</div>
