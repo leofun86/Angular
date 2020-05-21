@@ -1,0 +1,6 @@
+<h1 class="bg-dark text-center text-white my-4 py-4">Firebase</h1>
+<table class="table">
+    <tr *ngFor="let item of datos | async">
+        <td><i class="fa fa-user"></i> {{item.name}}</td>
+    </tr>
+</table>

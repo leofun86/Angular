@@ -1,4 +1,11 @@
 <div class="mt-5">
     <h2>Nosotros</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi a illum ipsa quod, quisquam est maiores aliquam assumenda beatae eius vitae saepe atque quam minus. Harum vel velit modi voluptatum!</p>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let item of equipo, index as i">
+            <b>Nombre:</b> {{item.nombre}}<br>
+            <b>Especialidad:</b> {{item.especialidad}}<br>
+            <a [routerLink]="['/equipo',i]">Leer más...</a>
+        </li>
+    </ul>
 </div>

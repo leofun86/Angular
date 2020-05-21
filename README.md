@@ -20,3 +20,8 @@ Agregar un componente al proyecto
 ---------------------------------
 Dentro de la carpeta **app** se encuentra el archivo **app.componente.html** que es el que contendrá todos los componentes de nuestra app. Para poder agegar un componente hay que abrir dicho archivo y escribir el nombre del componente como si fuera una etiqueta HTML.
 * < componente >< / componente >
+
+Intalar AngularFire2 && Firebase
+---------------------------------
+* npm i angularfire2
+* npm i firebase

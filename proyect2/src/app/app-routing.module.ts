@@ -4,16 +4,15 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ErrorComponent } from './error/error.component';
+import { EquipoComponent } from './equipo/equipo.component';
 
 const routes: Routes = [
-  //Ruta que dirige a InicioComponent
+  //Rutasd de los componentes
   { path: 'inicio', component: InicioComponent},
-  //Ruta que dirige a ContactoComponent
   { path: 'contacto', component: ContactoComponent},
-  //Ruta que dirige a NosotrosComponent
   { path: 'nosotros', component: NosotrosComponent},
-  //Ruta que dirige a ErrorComponent
   { path: 'error', component: ErrorComponent},
+  { path: 'equipo/:id', component: EquipoComponent},
   //Si la ruta está vacía, dirige a InicioComponent
   { path: '', component: InicioComponent, pathMatch: 'full' },
   //Si la ruta escrita es deconocida redirige a InicioComponent
