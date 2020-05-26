@@ -1,0 +1,31 @@
+ <h1 class="bg-dark text-center text-white py-3">Lista de items</h1>
+ <div class="alert alert-warning" role="alert" *ngFor="let item of items">
+    {{ item.name }}
+    <div class="float-right" style="font-size:1.5rem;position:relative;bottom:5px;">
+      <i class="fa fa-pencil mr-3" style="cursor:pointer;" data-toggle="modal" data-target="#editarItem" (click)="editar(item)"></i>
+      <i class="fa fa-trash" style="cursor:pointer;" (click)="eliminar(item)"></i>
+    </div>
+ </div>
+
+ <div class="modal" id="editarItem" tabindex="-1" role="dialog">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">Editar Item</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <form (ngSubmit)="itemEditado()">
+            <input
+                type="text" placeholder="Ingresa tu nombre"
+                name="name" class="form-control"
+                [(ngModel)]="editarItem.name"
+            >
+            <button class="btn btn-success mt-3" type="submit" data-dismiss="modal">Actualizar</button>
+        </form>
+       </div>
+     </div>
+   </div>
+ </div>
