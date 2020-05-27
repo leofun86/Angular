@@ -17,12 +17,18 @@ import { ListaAddComponent } from './components/lista-add/lista-add.component';
 
 //Módulo de formularios
 import { FormsModule } from '@angular/forms';
+import { IndexComponent } from './components/index/index.component';
+import { CompraNuevaComponent } from './components/compra-nueva/compra-nueva.component';
+import { EncabezadoComponent } from './components/encabezado/encabezado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaComponent,
-    ListaAddComponent
+    ListaAddComponent,
+    IndexComponent,
+    CompraNuevaComponent,
+    EncabezadoComponent
   ],
   imports: [
     BrowserModule,
