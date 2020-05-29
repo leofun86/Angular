@@ -1,0 +1,27 @@
+<form (submit)="$event.preventDefault();aniadirPersona(nombre.value, apellidos.value, edad.value, dni.value)">
+    <h2 class="bg-primary text-center text-white py-3 my-3" style="border-radius:5px;">Formulario</h2>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nombre</label>
+      <input #nombre type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su nombre">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Apellidos</label>
+        <input #apellidos type="text" class="form-control" placeholder="Ingrese sus apellidos">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Edad</label>
+        <input #edad type="text" class="form-control" placeholder="Ingrese su edad">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">DNI</label>
+        <input #dni type="text" class="form-control" placeholder="Ingrese su DNI">
+      </div>
+    <button class="btn btn-primary btn-lg">Enviar</button>
+  </form>
+  <p id="msj" class="text-center text-white py-2 mt-2">{{ mensaje }}</p>
+  <div class="bg-primary text-white p-2" *ngIf="!isEmpty()">
+      <div class="mb-2" *ngFor="let persona of personas">
+          <h1>{{ persona.nombreCompleto() }}</h1>
+          <p>{{ persona.mostrarInfo() }}</p>
+      </div>
+  </div>

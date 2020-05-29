@@ -1,0 +1,13 @@
+<h2 class="text-center mt-4">Ingrese un valor</h2>
+    <form (click)="cambioValor()">
+        <input
+            class="form-control"    
+            type="text"
+            placeholder="escriba algo"
+            name="valorInicial"
+            [(ngModel)]="valorInicial"
+        >
+        <input type="submit" value="cambiar">
+    </form>
+
+    <p>{{ valorFinal }}</p>

@@ -1,0 +1,10 @@
+<div style="text-align:center;">
+    <br><br>
+    <input class="form-control" type="text" #txtNombre required>
+    <button class="btn btn-warning mt-3" (click)="anadirNombre(txtNombre.value)">Añadir nombre</button>
+    <br><br>
+    <h3 class="bg-dark text-center text-white mb-3">Listado</h3>
+    <ul>
+        <li *ngFor="let item of nombres">{{ item }}</li>
+    </ul>
+</div>
