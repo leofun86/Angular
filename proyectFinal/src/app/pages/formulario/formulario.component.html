@@ -1,4 +1,5 @@
-<form (submit)="$event.preventDefault();aniadirPersona(nombre.value, apellidos.value, edad.value, dni.value)">
+<div class="container">
+  <form (submit)="$event.preventDefault();aniadirPersona(nombre.value, apellidos.value, edad.value, dni.value)">
     <h2 class="bg-primary text-center text-white py-3 my-3" style="border-radius:5px;">Formulario</h2>
     <div class="form-group">
       <label for="exampleInputEmail1">Nombre</label>
@@ -25,3 +26,4 @@
           <p>{{ persona.mostrarInfo() }}</p>
       </div>
   </div>
+</div>
